@@ -5,11 +5,11 @@
 - 🚀 **Superior Speed**: Faster than `pip` for dependency resolution and installation.
 
 ```bash
-#creates a proper Python project with pyproject.toml
+#creates a Python project with pyproject.toml
 uv init flight-booking-server
 
 cd flight-booking-server
 
-#adds and installs the dependency
+#adds and installs project dependency
 uv add "mcp[cli]"
 ```
