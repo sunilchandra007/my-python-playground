@@ -5,11 +5,18 @@
 - 🚀 **Superior Speed**: Faster than `pip` for dependency resolution and installation.
 
 ```bash
-#creates a Python project with pyproject.toml
-uv init flight-booking-server
+#create a new uv project
+uv init
 
-cd flight-booking-server
+#create a virtual environment
+uv venu
 
-#adds and installs project dependency
-uv add "mcp[cli]"
+#start a virtual environment
+source .venv/bin/activate
+
+#install the dependency in virtual env
+uv add "mcp[cli]" httpx
+
+#stop the virtual environment
+deactivate
 ```
