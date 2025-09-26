@@ -27,6 +27,10 @@ python -m ipykernel install --user --name=uv-env --display-name "Python (uv-env)
 # 7. Run Jupyter Notebook
 jupyter notebook
 
+# 7a. troubleshooting - check kernal in use
+import sys
+print("Python executable:", sys.executable)
+
 # 8. Stop the virtual environment when done
 deactivate
 
