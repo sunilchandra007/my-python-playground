@@ -14,6 +14,9 @@ uv venu
 #start a virtual environment
 source .venv/bin/activate
 
+#install packages
+pip install -r requirements.txt
+
 #install the dependency in virtual env
 uv add "mcp[cli]" httpx
 
