@@ -5,21 +5,29 @@
 - 🚀 **Superior Speed**: Faster than `pip` for dependency resolution and installation.
 
 ```bash
-#create a new uv project
+# 1. Create a new uv project
 uv init
 
-#create a virtual environment
+# 2. Create a virtual environment
 uv venu
 
-#start a virtual environment
+# 3. Start the virtual environment
 source .venv/bin/activate
 
-#install packages
+# 4. Install packages from requirements.txt
 uv pip install -r requirements.txt
 
-#install the dependency in virtual env
+# 5. Install additional dependencies in the virtual environment
 uv add "mcp[cli]" httpx
 
-#stop the virtual environment
+# 6. Install Jupyter and register the environment as a kernel
+uv pip install notebook ipykernel
+python -m ipykernel install --user --name=uv-env --display-name "Python (uv-env)"
+
+# 7. Run Jupyter Notebook
+jupyter notebook
+
+# 8. Stop the virtual environment when done
 deactivate
+
 ```
