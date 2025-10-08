@@ -9,7 +9,7 @@
 uv init
 
 # 2. Create a virtual environment
-uv venu
+uv venv
 
 # 3. Start the virtual environment
 source .venv/bin/activate
