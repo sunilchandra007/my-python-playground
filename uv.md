@@ -11,6 +11,12 @@ uv init
 # 2. Create a virtual environment
 uv venv
 
+# install dependency from project toml file
+uv sync
+
+# show depenndency tree
+uv tree
+
 # 3. Start the virtual environment
 source .venv/bin/activate
 
